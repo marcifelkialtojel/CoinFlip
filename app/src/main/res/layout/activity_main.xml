@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:id="@+id/coinImage"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/buttons"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tails"
+        />
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/headsButton"
+            android:text="Fej" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tailsButton"
+            android:text="Írás" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dobas"
+        android:layout_below="@+id/buttons"
+        android:textSize="25dp"
+        android:text="Dobások: 0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/win"
+        android:layout_below="@+id/dobas"
+        android:textSize="25dp"
+        android:text="Győzelmek: 0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vesztes"
+        android:layout_below="@+id/win"
+        android:textSize="25dp"
+        android:text="Vereségek: 0" />
+
+</RelativeLayout>
